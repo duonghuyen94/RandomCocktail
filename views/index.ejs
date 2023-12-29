@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Cocktail Recipe</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div>
+    <h1>Random Cocktail Recipe</h1>
+    <h2><%= name %></h2>
+    <img src="<%= image %>" alt="<%= name %>">
+    <h3>Ingredients:</h3>
+    <ul>
+      <% for (let i = 0; i < ingredients.length; i++) { %>
+        <li><%= measures[i] %> <%= ingredients[i] %></li>
+      <% } %>
+    </ul>
+    <h3>Instruction:</h3>
+    <p><%= instructions %></p>
+  </div>
+</body>
+
+</html>
